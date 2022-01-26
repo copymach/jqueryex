@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 ex02</title>
+</head>
+<body>
+
+	<h1>자바스크립트 ex02</h1>
+
+	<script type="text/javascript">
+	console.log("**변수선언**");
+	var no =3;
+	var str;
+	var boo;
+	
+	str="안녕하세요";
+	
+	console.log(typeof no);
+	console.log(typeof str);
+	console.log(typeof boo); // undefined
+	
+	boo = 3<5;
+	
+	console.log(typeof boo); // boolean
+	
+	boo = "홍길동";
+	console.log(boo); // boo 가 홍길동으로 바뀜 
+	console.log(typeof boo);
+	
+	
+	var person = "정우성";
+	var person = "이효리";
+	</script>
+
+	<script type="text/javascript">
+	console.log("undefined 와 null 비교");
+	var myVar1;
+	var myVar2 = null;
+	
+	console.log(myVar1); // undefined
+	console.log(myVar2); // null
+	
+	console.log("123" == 123); // true 자료형 무시하고 같다고 인정
+	console.log("123" === 123); // false 자료형까지 비교
+	
+	console.log("undefined == null");
+	console.log(myVar1 == myVar2); // true  
+	console.log(myVar1 === myVar2); // false
+	
+	
+	console.log("" == false); // true ""빈칸은 거짓이라는 조건은 참
+	console.log("" == 0); // true 
+	console.log("" === 0); // false
+	
+	
+	
+	</script>
+
+
+</body>
+</html>
