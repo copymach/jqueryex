@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 ex06</title>
+</head>
+<body>
+	<h1>자바스크립트 ex06</h1>
+	<h2>while문 6의 배수 14의 배수 인 가장 작은 정수 찾기</h2>
+
+	<br>
+	
+	<script>
+	var i = 1;
+	while(true) {
+		if (i%6==0 && i%14==0) {
+			document.write("6의 배수 14의 배수는 "+i);
+		break;
+		}
+		i++;
+	}
+	</script>
+	
+	
+	
+	<script type="text/javascript">
+	var i = 1;
+	var j = 0;
+	while (i%6 == i%14) {
+		j = j + i;
+		i++;
+	}		
+	
+	document.write(j);
+	</script>
+	
+	
+</body>
+</html>

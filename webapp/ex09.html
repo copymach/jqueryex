@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript 자바스크립트 ex09</title>
+</head>
+<body>
+	<h1>JavaScript 자바스크립트 ex09</h1>
+	<h2> 함수 기명함수 익명함수 </h2>
+	<h3> 기명함수 testA </h3>
+<script type="text/javascript">
+	function testA() {
+		document.write("기명함수 testA 실행");
+		console.log("기명함수 testA 실행");
+	};
+	
+	testA(); // 기명 함수 testA 실행
+	
+</script>
+
+	<h3> 익명함수 testB </h3>
+	<h4>익명함수는 이름이 없으면 사용불가 -> 변수에 할당 하여 사용</h4>
+<script type="text/javascript">
+		
+	var testB = function() {
+		document.write("익명함수 testB 실행");
+		console.log("익명함수 testB 실행");
+	};
+	
+	testB(); // 익명 함수 testB 실행 var 보다 앞에 있으면 실행안됨
+		
+</script>
+	
+
+</body>
+</html>

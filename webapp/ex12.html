@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript 자바스크립트 ex12</title>
+</head>
+<body>
+	<h1>JavaScript 자바스크립트 ex12</h1>
+	<h2> 변수의 범위 var를 붙혀서 사용 권장 </h2>	
+<script type="text/javascript">
+
+	var name = 'global';
+	
+	function checkscope() {
+		var name = 'local';
+		console.log('name 펑션 내 출력 '+name);
+		document.write('name 출력 '+name);
+	}
+	
+	document.write('중복한 name 중 어느게 출력할 것인가 \n ');
+	
+	checkscope(); // local
+	console.log('name 평션 밖 출력 '+name);
+	document.write('name 평션 밖 출력 '+name);
+	// var name = 'local'; -> local 이름 잠깐 생겼다가 사라졌다
+	
+</script>
+<br> <h3>name test2</h3>
+<script type="text/javascript">
+	var name = 'global';
+	
+	function checkscope() {
+		name = 'local' // 기존에 쓴 var name 을 덮어 쓰라 
+		//var name = 'local'
+		name2 = 'local'; // var 를 빼고 써서 전역 name2 생성 펑션 밖에도 영향을 미침
+		}
+	
+	checkscope();
+	console.log(name); // local 
+	console.log(name2); // local
+	
+</script>
+
+</body>
+</html>
