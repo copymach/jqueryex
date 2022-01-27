@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript 자바스크립트 ex16</title>
+</head>
+<body>
+	<h1>JavaScript 자바스크립트 ex16</h1>
+	<h2> 이벤트 제어  </h2>
+	
+	<div>
+	<button id="btn" type="button">js 연습 버튼:누르면 큰일남</button>
+	<h3 id="display">이름 출력 영역</h3>
+	</div>
+		
+<script type="text/javascript">
+	window.onload = function() {
+		var testButton = document.getElementById("btn");
+		var testArea = document.getElementById("display");
+		
+		console.log(testArea);
+		testButton.onclick = function() {
+			testArea.innerHTML = "<font size='20' color='red'>1</font>"
+		};
+	};
+</script> 
+
+<!-- <script type="text/javascript">
+//버튼 클릭 이벤트 
+window.onload = function(){
+	var testButton = document.getElementById("btn");
+	testButton.onclick = function(){
+		console.log("버튼클릭");
+	};
+};
+</script> -->
+
+</body>
+</html>
