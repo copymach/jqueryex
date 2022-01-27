@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+		
+	</ul>
+
+</body>
+
+<script type="text/javascript">
+	
+	$("li").on("click", function() {
+		var tag = $(this);
+		tag.html("임<stong>꺽</strong>정");
+		
+		$(this).html("<Strong>이<a href=#>몽</a></strong>룡");
+		
+		//var tag = $(this);
+		//tag.text(이몽룡);
+	});
+	
+	
+	/*
+	//클릭하면 이름 바뀌는 스크립트 - 내가 만듬
+	$("li").on("click", function() {
+		var tag = $(this);
+		var tagIdtext = tag.text("임꺽정");
+		console.log("li클릭"+tag);
+		console.log("tagIdtext"+tagIdtext);
+	});
+	*/
+	
+	/*
+	$("li").on("click", function() {
+		var tag = $(this);
+		//var tagId = tag.attr("id");
+		var tagIdtext = tag.text("임꺽정");
+		console.log("li클릭"+tag);
+		//console.log("tagId"+tagId);
+		console.log("tagIdtext"+tagIdtext);
+	});
+	*/
+	
+	/*$("#first").on("click", function() {
+		var str = $("#first").text();
+		console.log(str);
+	};*/
+</script>
+
+</html>

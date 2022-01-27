@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+<title>제이쿼리 JQuery jex01</title>
+</head>
+<body>
+<h1>제이쿼리 실습 jex01</h1>
+	<h2> 이벤트 제어  </h2>
+	
+	<div>
+	<button id="btn" type="button">js 연습 버튼:누르면 큰일남</button>
+	<h3 id="display">이름 출력 영역</h3>
+	</div>
+
+<script type="text/javascript">
+	// $이벤트.할일
+	$("#btn").on("click", function(){
+		console.log("버튼 클릭");
+		$("#display").html('<font color="red"> 서울대입구 </font>');
+	} );
+	
+</script>
+	
+</body>
+</html>

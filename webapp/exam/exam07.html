@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+
+<body>
+	<p id="p1"> abcdefghijklmn </p>
+	<p id="p2"> 학교종이 땡땡땡<br /> abcdefg </p>
+</body>
+
+<script type="text/javascript">
+$("#p1").html("<a href=#>아버지가<strong>방</strong>에들어가신다</a>");
+// $("#p1").text("<a href=#>아버지가<strong>방</strong>에들어가신다</a>"); 태그를 쓸수없다
+
+var text =$("#p2").html();
+// var text =$("#p2").text();
+console.log(text);
+
+</script>	
+
+</html>
