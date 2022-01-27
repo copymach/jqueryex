@@ -14,13 +14,17 @@
 	</div>
 		
 <script type="text/javascript">
+
+	//html - 자바 스크립트 객체화
 	window.onload = function() {
 		var testButton = document.getElementById("btn");
 		var testArea = document.getElementById("display");
 		
+		//버튼을 클릭 했을때
 		console.log(testArea);
 		testButton.onclick = function() {
-			testArea.innerHTML = "<font size='20' color='red'>1</font>"
+			//텍스트 영역을 변경
+			testArea.innerHTML = "<font size='20' color='red'> 1 </font>"
 		};
 	};
 </script> 
